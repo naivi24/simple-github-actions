@@ -11,10 +11,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          pull_request:
-permissions:
-  contents: read
-  issues: write
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.14.0
         with:
